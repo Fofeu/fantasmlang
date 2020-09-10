@@ -1,0 +1,20 @@
+\begin{array}{rcl}
+  prog  & ::= & decls\ stmts \\
+  \\
+  decls & ::= & \texttt{local}\ vars \\
+  vars  & ::= & var\ |\ var \ vars\\
+  \\
+  stmts & ::= & stmt\ |\ stmt\ stmts \\
+  stmt  & ::= & op\ args \\
+  op    & ::= & \texttt{mvi}\ |\ \texttt{add}\ |\
+                \texttt{sub}\ |\ \texttt{mul}\ |\
+                \texttt{div}\ |\ \texttt{ret} \\
+  args  & ::= & arg\ |\ arg\ args\\
+  arg   & ::= & var\ |\ num \\
+  \\
+  var   & ::= & id \\
+\end{array}
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
