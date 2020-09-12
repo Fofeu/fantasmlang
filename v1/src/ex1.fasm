@@ -1,0 +1,7 @@
+local a b c
+mvi a 3
+mvi b 4
+mvi c 7
+add a a b
+sub c c a
+ret a c
